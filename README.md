@@ -1,5 +1,5 @@
 # NGCP
-Flight scripts using Ardupilot and PyMavLink on Ubuntu20.0
+Flight scripts using Ardupilot and Pymavlink on Ubuntu20.0
 
 **Install Ardupilot**
 
