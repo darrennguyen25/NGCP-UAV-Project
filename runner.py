@@ -1,9 +1,8 @@
 import time
-import csv
 from planefunction import *
 from read import *
 
-filename = "kraken_2.csv"
+filename = "kraken_3.csv"
 
 armplane()
 mode = "TAKEOFF"

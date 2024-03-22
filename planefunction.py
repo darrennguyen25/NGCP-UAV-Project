@@ -77,8 +77,9 @@ def goHome():
       print("waypoint set to 0, 0, 200")
 
 def missionStart(latitude: float, longitude: float):
+      radius = input("Enter radius: ")
       master.mav.command_int_send(master.target_system, master.target_component,
 					  mavutil.mavlink.MAV_FRAME_GLOBAL,
-                                         mavutil.mavlink.MAV_CMD_DO_REPOSITION, 0, 0, -1, 1, 15, 1, int(latitude * 10**7), int(longitude * 10**7), 200)
+                                         mavutil.mavlink.MAV_CMD_DO_REPOSITION, 0, 0, -1, 1, float(radius), 1, int(latitude * 10**7), int(longitude * 10**7), 200)
 
       print("waypoint set to " + str(latitude) + ", " + str(longitude) + ", 200")
