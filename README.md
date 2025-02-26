@@ -1,5 +1,6 @@
 # NGCP
-Flight scripts using Ardupilot and Pymavlink on Ubuntu20.0
+
+Flight scripts using Ardupilot and PyMavLink on Ubuntu20.0
 
 **Install Ardupilot**
 
@@ -12,21 +13,25 @@ Tools/environment_install/install-prereqs-ubuntu.sh -y
 . ~/.profile
 ```
 
+OR you can go to this google drive link: https://drive.google.com/file/d/1buy2GcVNB3jInE9abCZTOaj97sAnSFyX/view
+
 **Install pymavlink**
+
 ```
 pip install pymavlink
 ```
 
-
 **To run**
+
 ```
 cd NGCP/pymavlink
 mkdir ArduPlane
 cd ArduPlane
-sim_vechile --map --console
+sim_vehicle.py -v ArduPlane -L CPP --map --console
 ```
 
 **IN A DIFFERENT TERMINAL**
+
 ```
-python3 {any_sript.py}
+python3 {any_script.py}
 ```
